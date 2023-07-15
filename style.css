@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    overflow: hidden;
+}
+.big-container{
+    height: 100vh;
+    width: 50%;
+}
+.container{
+    position: relative;
+   
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    animation: beating .6s linear infinite  ;
+}
+
+.shape-1,.shape-2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50px;
+}
+.shape-1{
+    top: -30px;
+}
+.shape-2{
+    right: -30px;
+
+}
+
+
+@keyframes beating {
+    0%{
+transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1);
+
+    }
+    100%{
+        transform: rotate(-45deg) scale(1.09);
+
+    }
+}
+
+#part1{
+    top: 80px;
+    left: 50px;
+    background-color: #f20044;
+    box-shadow: 10px -2px 70px red;
+}
+#part1 .shape-1, #part1 .shape-2{
+    background-color: #f20044;
+}
+#part2{
+    top: 70px;
+    left: 500px;
+    background-color: #a100f2;
+    box-shadow: 10px -2px 70px #b02ff1;
+}
+
+#part2 .shape-1, #part2 .shape-2{
+    background-color: #a100f2;
+}
+#part3{
+    top: 150px;
+    background-color: #fff420;
+    left: 300px;
+    box-shadow: 10px -2px 70px #fff420;
+}
+#part3 .shape-1, #part3 .shape-2{
+    background-color: #fff420;
+}
+#part4{
+    top: 180px;
+    background-color: #000090;
+    left: 650px;
+    box-shadow: 10px -2px 70px #0f0ff4;
+}
+#part4 .shape-1, #part4 .shape-2{
+    background-color: #000090;
+}
+#part5{
+    top: 190px;
+    background-color: #009000;
+    left: 50px;
+    box-shadow: 10px -2px 70px rgb(43, 243, 43);
+}
+#part5 .shape-1, #part5 .shape-2{
+    background-color: #009000;
+}
+#part6{
+    top: 250px;
+    background-color: #e11397;
+    left: 350px;
+    box-shadow: 10px -2px 70px #ff3eb8;
+}
+#part6 .shape-1, #part6 .shape-2{
+    background-color: #e11397;
+}
